@@ -1,6 +1,6 @@
 In elke pagina dienen de volgende dingen te staan:
 
-- Een include naar /inc/header.php
+- Een include naar /inc/header.php en /inc/footer.php
             Hierin staan dingen zoals de helpknop.
 
 - Een $pageName variabele

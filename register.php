@@ -1,5 +1,5 @@
 <?php
-$pageName = 'splash';
+$pageName = 'register';
 include_once "_inc/header.php";
 
 if (isset($_POST['register']) === true) {

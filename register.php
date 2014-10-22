@@ -12,7 +12,7 @@ if (isset($_POST['register']) === true) {
     } if (empty($_POST['screenname']) === true) {
         $error[] = '\'Screen Name\' is not filled in.';
     } else {
-        if (username_exist($_POST['username']) === true) {
+        if (doesUsernameExist($_POST['username']) === true) {
             $error[] = 'The username \'' . $_POST['username'] . '\' is already taken.';
         } if (strlen($_POST['username']) < 3 || strlen($_POST['username']) > 30) {
             $error[] = 'This username is to long or to short it must be between 3 and 30.';

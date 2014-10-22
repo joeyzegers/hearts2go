@@ -10,7 +10,7 @@ function register_user($register_data) {
     return mysqli_query($con, "INSERT INTO users($fields) VALUES ($data)");
 }
 
-function username_exist($username) {
+function doesUsernameExist($username) {
     global $con;
     $username = trim(mysqli_real_escape_string($con, $username));
     
@@ -24,5 +24,11 @@ function error_handeling($error) {
 function array_sanitize(&$item) {
     global $con;
     $item = htmlentities(mysqli_real_escape_string($con, $item));
+}
+
+function print_array($array) {
+	echo "<pre>";
+	print_r($array);
+	echo "</pre>";
 }
 ?>
